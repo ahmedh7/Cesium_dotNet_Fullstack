@@ -1,0 +1,52 @@
+# === Angular frontend ===
+/frontend/node_modules/
+/frontend/dist/
+/frontend/out-tsc/
+/frontend/.angular/
+/frontend/.vscode/
+/frontend/.idea/
+
+# Angular environment files (if any secrets)
+/frontend/src/environments/*.ts
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === .NET backend ===
+/backend/bin/
+/backend/obj/
+/backend/.vs/
+/backend/*.user
+/backend/*.suo
+/backend/*.userosscache
+/backend/*.sln.docstates
+
+# Visual Studio Code settings for backend (optional)
+/backend/.vscode/
+
+# .NET publish output folders (optional, if you publish locally)
+/backend/publish/
+/backend/PublishProfiles/
+
+# User secrets (if used)
+/backend/Secrets.json
+
+# === Environment files ===
+*.env
+*.local
+.env.*
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === IDE/editor config ===
+.vscode/
+.idea/
+
+# === Others ===
+*.swp
+*.bak

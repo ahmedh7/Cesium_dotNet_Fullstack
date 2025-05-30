@@ -1,0 +1,28 @@
+<div class="upload-box">
+
+  <input type="file" #fileInput
+         (change)="onFileChange($event)"
+         multiple
+         accept=".shp,.prj"
+         class="file-input" />
+
+  @if(uploadMessage.toLowerCase().includes('success')){
+    <div class="success">
+      {{uploadMessage}}
+    </div>
+  } @else if (uploadMessage){
+    <div class="error">
+      {{uploadMessage}}
+    </div>
+  } @else if(isUploading){
+    <div class="spinner-overlay">
+      <mat-progress-spinner mode="indeterminate" diameter="60" strokeWidth="5"></mat-progress-spinner>
+    </div>
+  }
+  
+
+  <button (click)="submit()" [disabled]="!canSubmit" class="upload-button">
+    Upload
+  </button>
+</div>
+

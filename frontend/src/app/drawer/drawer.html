@@ -1,0 +1,16 @@
+<div class="toolbar">
+  <button (click)="startDrawing('polygon')" [class.active]="drawingMode === 'polygon'">Draw Polygon</button>
+  <button (click)="startDrawing('polyline')" [class.active]="drawingMode === 'polyline'">Draw Polyline</button>
+  <button (click)="finishDrawing()" [disabled]="!isDrawing">Finish</button>
+  <button (click)="clearAll()">Clear All</button>
+</div>
+@if(isAskingForLabel){
+<div class="popup">
+    <input [(ngModel)]="newLabel" placeholder="Enter label..." />
+    <div class="popup-buttons">
+        <button class="save-btn" (click)="saveLabel()">💾 Save</button>
+        <button class="cancel-btn" (click)="cancelEdit()">❌ Cancel</button>
+    </div>
+</div>
+
+}

@@ -1,0 +1,11 @@
+@if(selectedFeatureId !== null && selectedFeatureId !== -1){
+<div class="popup">
+    <input [(ngModel)]="newLabel" placeholder="Enter label..." />
+    <div class="popup-buttons">
+        <button class="save-btn" (click)="saveLabel()">💾 Save</button>
+        <button class="cancel-btn" (click)="cancelEdit()">❌ Cancel</button>
+    </div>
+</div>
+
+}
+<div id="cesiumContainer"></div>
