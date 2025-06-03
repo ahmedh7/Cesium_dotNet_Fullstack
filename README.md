@@ -22,14 +22,7 @@ This application allows users to:
 #### **Steps**  
 1. **Install required libraries** (run in `/backend` folder):  
    ```sh
-   dotnet add package Microsoft.EntityFrameworkCore.SqlServer
-   dotnet add package NetTopologySuite
-   dotnet add package Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite
-   ...
-   ```
-   **Or just use**
-   ```sh
-   dotnet install
+   dotnet restore
    ```
 
 2. **Configure `appsettings.json`**  
